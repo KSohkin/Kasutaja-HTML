@@ -4,7 +4,8 @@ body {
     text-align: center;
 }
 .container {
-    max-width: 800px;
+    max-width: 90%; /* Teeb mobiilis kitsamaks */
+    width: 400px; /* Kindel laius, et elemendid mahuvad ära */
     margin: auto;
     background: white;
     padding: 20px;
@@ -14,14 +15,21 @@ body {
 }
 .steps {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 5px; /* Lisab vahe, et ei oleks liiga tihedalt koos */
+    flex-wrap: wrap; /* Murrab uuele reale, kui ruumi pole */
     padding: 10px;
 }
 .step {
-    padding: 10px;
-    border-radius: 20px;
+    flex: 1; /* Võrdne laius */
+    min-width: 80px; /* Väldib liiga kitsaks muutumist */
+    padding: 8px 12px; /* Vähendab kõrgust */
+    text-align: center;
+    border-radius: 15px;
     background: #ccc;
     color: black;
+    font-size: 14px;
 }
 .active {
     background: blue;
