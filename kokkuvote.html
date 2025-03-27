@@ -7,10 +7,48 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <div class="steps">
+            <div class="step active">Vali domeen</div>
+            <div class="step active">Andmed</div>
+            <div class="step active">Kokkuvõte</div>
+        </div>
+        <h2>Sisestage kasutaja andmed</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nimi</label>
+                    <input type="text" id="name" class="search-box" placeholder="Nimi *">
+                </div>
+    
+                <div class="form-group">
+                    <label for="company-name">Ettevõtte nimi</label>
+                    <input type="text" id="company-name" class="search-box" placeholder="Ettevõtte nimi">
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="promo">
+                    <label for="promo">Kas soovite saada emailile soodus pakkumisi ja reklaame?</label>
+                </div>
+                
+            </form>
+            <div class="container">
+                <div class="order-summary">
+                    <h3>Tellimuse kokkuvõte</h3>
+                    <p>Näidis.ee <span>67.99€</span></p>
+                    <p>+km <span>14.95€</span></p>
+                    <p class="registration">Registreerimine (5 aastaks) <span>67.99€ + km</span></p>
+                    <hr>
+                    <p class="total">Kokku <span>82.94€</span></p>
+                </div>
+        </div>
+
+    
+    </div>   
+    </div>
     
 
 
     <button class="button-tagasi" onclick="window.location.href='andmed.html'"><-Tagasi</button>
-    <button type="submit">Edasi</button>
+    <button type="submit">Edasta Tellimus</button>
 </body>
 </html>
