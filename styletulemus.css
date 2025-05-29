@@ -13,8 +13,11 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border-radius: 10px;
     margin-top: 20px;
+    grid-template-columns: auto auto; /* Two equal columns */
+    gap: 40px; /* Space between form elements */
 }
 
+/* Steps Navigation */
 .steps {
     display: flex;
     justify-content: center;
@@ -39,25 +42,81 @@ body {
     color: white;
 }
 
-.Andmed {
-    max-width: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 40px; /* Space between form elements */
-    margin: 50px 0;
-    text-align: left; /* Align labels to the left */
+/* Form Section */
+.form-section {
+    text-align: left;
+    margin-bottom: 20px;
 }
 
-.form-group {
+h2, h3 {
+    margin-bottom: 20px;
+}
+
+form {
     display: flex;
     flex-direction: column;
 }
 
 label {
     font-size: 14px;
-    font-weight: bold;
     margin-bottom: 5px;
     color: #333;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.back-btn {
+    background: transparent;
+    border: 1px solid #007bff;
+    color: #007bff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.back-btn:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* Order Summary */
+.order-summary {
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.order-summary p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;;
+}
+
+.registration {
+    font-size: 12px;
+    color: #555;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .search-box {
@@ -68,14 +127,9 @@ label {
     width: 90%;
     background-color: #fff;
 }
-
-button {
-    background: blue;
-    color: white;
-    border: 1px solid blue ;
-    padding: 10px 34px;
-    cursor: pointer;
-    border-radius: 5px;
+.form-group {
+    display: flex;
+    flex-direction: column;;
 }
 
 .button-tagasi {
@@ -85,10 +139,4 @@ button {
     padding: 10px 24px;
     cursor: pointer;
     border-radius: 5px;
-}
-
-.checkbox-group {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
